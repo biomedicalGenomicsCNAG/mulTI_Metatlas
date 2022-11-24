@@ -1,5 +1,5 @@
 # mulTI_Metalas
-## Title
+## Title: Multi-tissue single-cell transcriptomics of immune cells uncovered tissue-specific features 
 
 ## Author: Maria Tsagiopoulou
 
