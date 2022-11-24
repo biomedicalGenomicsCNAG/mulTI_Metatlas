@@ -4,7 +4,7 @@
 ## Author: Maria Tsagiopoulou
 
 ## Graphical summary
-![Picture1](https://user-images.githubusercontent.com/19466299/203802949-090ceb47-6dba-49c2-8fd3-f8ffb8902760.png)
+![Picture2](https://user-images.githubusercontent.com/19466299/203803295-3c1bf56c-c81b-4bbb-bede-6bfa66f33f50.png)
 
 
 ## Abstract
