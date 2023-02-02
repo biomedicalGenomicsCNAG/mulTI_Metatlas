@@ -13,7 +13,7 @@
 ## Data
 The data has been deposited in five levels of organization, from raw to processed data:
 
-- raw data. All the new generated fastq files have been downloaded from HCA
+- raw data. All the new generated fastq files have been downloaded from HCA. Full table with the information regarding the used project is available on the supplementary table 1 of the published paper
 - matrices. All the counts table have been deposited in [Zenodo](https://zenodo.org/record/XX)
 
 
