@@ -1,8 +1,10 @@
-blabla
-4. ILisi score
-5. hypergeometric distribution applying on the proportions of the immune cells across the different tissues
-6. correlation plot
-7. find DE genes
-8. GSEA
-9. regulons
-10. NFKB activity
+## Folder description
+
+- GSEA
+pathway analysis, plotting and focused analysis on NFkB 
+
+- Quality control
+QC of the main object of the analysis located in XXXXXXXXXXXXXX 
+
+- main analysis
+scripts using each immune compartment and analyzing the porportions, signatures and correlation of expression profiles
