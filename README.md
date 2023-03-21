@@ -28,5 +28,4 @@ install.packages(c("tidyverse", "ggplot2",  "stringi", "boot"))
 ```
 BiocManager::install(c("limma",  "ComplexHeatmap", "sva", "DESeq2"))
 ```
-### from anaconda
-#### necessary for 
+### https://github.com/Single-Cell-Genomics-Group-CNAG-CRG/TonsilAtlas/tree/main/scRNA-seq/gene_regulatory_networks/pyScenic
