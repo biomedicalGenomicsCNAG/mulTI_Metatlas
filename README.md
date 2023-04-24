@@ -22,27 +22,23 @@ The packages needed to be installed, in order to run the project are:
 
 ### from CRAN
 ```
-install.packages(c("tidyverse", "ggplot2",  "stringi", "boot"))
-These are the versions of the most important packages used throughout all the analysis:
-
-CRAN:
-
-Seurat 4.0.3
-dplyr 1.0.6
-purrr 0.3.4
-stringr 1.4.0
-tidyr 1.1.3
-ggplot2 3.3.3
-harmony 1.0
-
-BioConductor:
-clusterProfiler 3.18.1
-
-
+msigdbr
+data.table
+ggpubr
+tidyverse
+ggplot2
+readr
+harmony
+Seurat
 
 ```
 ### from Bioconductor
 ```
-BiocManager::install(c( "ComplexHeatmap", ))
+clusterProfiler
+fgsea
+org.Hs.eg.db
+enrichplot
+loomR
+lisi
 ```
 
