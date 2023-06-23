@@ -22,23 +22,19 @@ The packages needed to be installed, in order to run the project are:
 
 ### from CRAN
 ```
-msigdbr
-data.table
-ggpubr
-tidyverse
-ggplot2
-readr
-harmony
-Seurat
-
+install.packages(c("msigdbr", "data.table",  "ggpubr", "tidyverse", "ggplot2", "readr", "harmony", "Seurat"))
 ```
+
 ### from Bioconductor
 ```
-clusterProfiler
-fgsea
-org.Hs.eg.db
-enrichplot
-loomR
-lisi
+BiocManager::install(c("clusterProfiler",  "fgsea", "org.Hs.eg.db", "enrichplot", "loomR", "lisi")) 
 ```
 
+## Folders and content:
+### HCA to Seurat: 
+- ```Loom2seurat_merged.R```: Script to upload the loom files downloading from HCA, transformed into Seurat object, subsetting by CD45+ marker and merge the individual files in a Seurat matrix
+
+### RNAseq_analysis: 
+- ```Quality control```: Folder including the script for QC metrics to identify low-quality cells based on their expression profiles and the script for calculating the lisi score
+- ```main analysis```: Folder including scripts and visualization of the main figures of the manuscript: hypergeometricdistribution.R, Correlation matrix.R, Signatures.R
+- ```GSEA```: Folder including the script and the results in regards to Gene Set Enrichment Analysis (GSEA)
