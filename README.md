@@ -8,7 +8,7 @@
 
 
 ## Abstract
-
+Despite the large number of publicly available single-cell datasets, there is a limited understanding of the distinct resident immune cells and their concomitant features in diverse human organs. To address this, we compiled a dataset of 114,275 CD45+ immune cells from 14 organs from healthy donors. Although the transcriptome of immune cells is constant across organs, organ-specific gene expression changes were detected revealing unique expression in certain organs (GTPX3 in kidney, DNTT and ACVR2B in thymus). These alterations are associated with different transcriptional factor activities and pathways including metabolism. TNF-α signaling through the NFkB pathway was found in various organs and immune compartments including distinct expression profiles of NFkB family genes and their target genes such as cytokines indicating their role in cell positioning. Taken together, immune cells not only protect the organs but also adapt to the host organ environment and contribute to its function and homeostasis.
 
 ## Data
 The data has been deposited in different levels of organization, from raw to processed data:
