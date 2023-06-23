@@ -19,7 +19,7 @@ M <-cor(cluster.averages[,-as.numeric(last)])
 corrplot(M, type="upper", order="hclust",tl.col = 'black',
          col=brewer.pal(n=8, name="RdYlBu"), is.corr = FALSE,col.lim=c(min(M), max(M)))
 
-testRes = cor.mtest(cluster.averages[,-8], conf.level = 0.95)
+testRes = cor.mtest(cluster.averages[,-last], conf.level = 0.95)
 
 corrplot(M, p.mat = testRes$p, method = 'circle', type = 'lower', insig='blank',
          addCoef.col ='black', 
