@@ -1,4 +1,4 @@
-# Multi tissue met@tlas
+# Multi-organ met@tlas
 ## Title: Multi-organ single-cell transcriptomics of immune cells uncovered organ-specific gene expression and functions 
 
 ## Author: Maria Tsagiopoulou
