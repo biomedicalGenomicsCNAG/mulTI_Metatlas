@@ -2,7 +2,8 @@ library(corrplot)
 library(RColorBrewer)
 library(tidyverse)
 
-sub = #add the rds files that you want to analyze
+#Data
+# sub= subset of the main Seurat object in one cell type (e.g. subset on B cells compartment)
 
 cluster.averages <- AverageExpression(sub, group.by = c("Tissue"))# average values
 
