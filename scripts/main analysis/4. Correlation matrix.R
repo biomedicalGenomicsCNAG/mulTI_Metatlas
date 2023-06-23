@@ -2,7 +2,8 @@ library(corrplot)
 library(RColorBrewer)
 library(tidyverse)
 
-sub = #add the rds files that you want to analyze
+#Data
+# sub= subset of the main Seurat object in one cell type (e.g. subset on B cells compartment)
 
 cluster.averages <- AverageExpression(sub, group.by = c("Tissue"))# average values
 
@@ -18,7 +19,7 @@ M <-cor(cluster.averages[,-as.numeric(last)])
 corrplot(M, type="upper", order="hclust",tl.col = 'black',
          col=brewer.pal(n=8, name="RdYlBu"), is.corr = FALSE,col.lim=c(min(M), max(M)))
 
-testRes = cor.mtest(cluster.averages[,-8], conf.level = 0.95)
+testRes = cor.mtest(cluster.averages[,-last], conf.level = 0.95)
 
 corrplot(M, p.mat = testRes$p, method = 'circle', type = 'lower', insig='blank',
          addCoef.col ='black', 

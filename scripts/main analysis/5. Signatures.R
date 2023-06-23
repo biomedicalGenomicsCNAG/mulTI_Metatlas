@@ -1,6 +1,8 @@
 #automatic signatures across the tissues
 
-sub = #add the rds file of interest
+# Data
+# sub= subset of the main Seurat object in one cell type (e.g. subset on B cells compartment)
+
 
 cells<-table(sub$Tissue)
 cells = as.data.frame(cells)
