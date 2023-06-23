@@ -6,7 +6,8 @@ library(tidyverse)
 library(loomR)
 library(harmony)
 
-
+# Data
+# download the object from zenodo https://zenodo.org/record/7756209
 s_1 <- readRDS('immune_combined.rds')
 
 
