@@ -1,5 +1,7 @@
 ###PORPROTIONS
 
+#Data
+## sub= subset of the main Seurat object in one cell type (e.g. subset on B cells compartment) 
 
 library(ComplexHeatmap)
 library(gplots)
