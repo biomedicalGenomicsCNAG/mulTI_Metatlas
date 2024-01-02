@@ -19,7 +19,7 @@ DotPlot(sub1, features = NFKB_story) + RotatedAxis()  +
 
 
 # activity of NFkB target genes
-markers$NFKB <- as.data.frame(fread('NFkBtargets_regulonsAnalysis.txt'))$gene
+markers$NFKB <- as.data.frame(fread('NFkBtargets_regulonsAnalysis.txt'))$gene #find the file on mulTI_Metatlas/scripts/GSEA/NFkB_target_genes/
 
 target <- AddModuleScore_UCell(
   obj = sub1,
