@@ -19,7 +19,7 @@ DotPlot(sub1, features = NFKB_story) + RotatedAxis()  +
 
 
 # activity of NFkB target genes
-regulons=readRDS("D:\\cnag\\HCA\\test_data\\2022\\Full_object_220601_regulons_and_targets.rds") # upload the regulons 
+regulons=readRDS("Full_object_220601_regulons_and_targets.rds") # object of the regulon analysis
 
 NFKB_reg=unname(unlist(regulons[c("NFKBIA","NFKBID","NFKB1","NFKB2", "REL", "RELA", "RELB")]))
 NFKB_reg=NFKB_reg[!duplicated(NFKB_reg)]
