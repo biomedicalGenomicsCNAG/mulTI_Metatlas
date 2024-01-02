@@ -19,14 +19,8 @@ DotPlot(sub1, features = NFKB_story) + RotatedAxis()  +
 
 
 # activity of NFkB target genes
-regulons=readRDS("Full_object_220601_regulons_and_targets.rds") # object of the regulon analysis
+markers$NFKB <- as.data.frame(fread('NFkBtargets_regulonsAnalysis.txt'))$gene
 
-NFKB_reg=unname(unlist(regulons[c("NFKBIA","NFKBID","NFKB1","NFKB2", "REL", "RELA", "RELB")]))
-NFKB_reg=NFKB_reg[!duplicated(NFKB_reg)]
-
-
-markers <- list()
-markers$NFKB <- NFKB_reg
 target <- AddModuleScore_UCell(
   obj = sub1,
   features = markers
@@ -80,7 +74,7 @@ Heatmap(as.matrix(zmat), clustering_distance_columns = "euclidean",
         clustering_method_columns = "complete", show_row_names = F)
 
 # overlap of cytokines KEGG pathway with cytokines driven by NFkB
-chem = fread("D:\\cnag\\HCA\\test_data\\merged_objects\\genelists\\geneset_KEGG_2.txt") #cytokines pathway from KEGG
+chem = fread("geneset_KEGG_2.txt") #cytokines pathway from KEGG
 diff = as.data.frame(chem)
 names(diff) = "diff"
 cytokines = intersect(markers_plot$gene, diff$diff) 
