@@ -14,7 +14,7 @@ Despite the large number of publicly available single-cell datasets, there is a 
 The data has been deposited in different levels of organization, from raw to processed data:
 
 - raw data. All the fastq files have been downloaded from HCA. Full table with the information regarding the used project is available in the metadata file or the supplementary table 1 of the published paper
-- matrix. The counts table has been deposited in [Zenodo](https://zenodo.org/record/7756209)
+- matrix. The counts table has been deposited in [Zenodo](https://zenodo.org/records/10197112)
 
 
 ## Prerequisites
