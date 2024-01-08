@@ -19,14 +19,8 @@ DotPlot(sub1, features = NFKB_story) + RotatedAxis()  +
 
 
 # activity of NFkB target genes
-regulons=readRDS("Full_object_220601_regulons_and_targets.rds") # the object after the regulons analysis 
+markers$NFKB <- as.data.frame(fread('NFkBtargets_regulonsAnalysis.txt'))$gene #find the file on mulTI_Metatlas/scripts/GSEA/NFkB_target_genes/
 
-NFKB_reg=unname(unlist(regulons[c("NFKBIA","NFKBID","NFKB1","NFKB2", "REL", "RELA", "RELB")]))
-NFKB_reg=NFKB_reg[!duplicated(NFKB_reg)]
-
-
-markers <- list()
-markers$NFKB <- NFKB_reg
 target <- AddModuleScore_UCell(
   obj = sub1,
   features = markers
