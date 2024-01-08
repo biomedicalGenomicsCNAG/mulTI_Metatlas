@@ -9,7 +9,7 @@ library(UCell)
 
 # expression genes including in TNFa via NFkB
 VlnPlot(sub1, features = c("TNF","NFKBIA","NFKBID","NFKB1","NFKB2", "REL", "RELA", "RELB"), group.by = "Tissue")
-Idents(sub)= sub$Tissue
+Idents(sub)= sub$Tissue #sub is a subset of the initial rds file. e.g., only B cells
 sub1= subset(sub, subset = Tissue == totest$Var1)
 unique(sub1$Tissue)
 NFKB_story= c("TNF","NFKBIA","NFKBID","NFKB1","NFKB2", "REL", "RELA", "RELB")
@@ -74,7 +74,7 @@ Heatmap(as.matrix(zmat), clustering_distance_columns = "euclidean",
         clustering_method_columns = "complete", show_row_names = F)
 
 # overlap of cytokines KEGG pathway with cytokines driven by NFkB
-chem = fread("geneset_KEGG_2.txt") #cytokines pathway from KEGG
+chem = fread("geneset_KEGG_2.txt") # downloading the cytokines pathway from KEGG database
 diff = as.data.frame(chem)
 names(diff) = "diff"
 cytokines = intersect(markers_plot$gene, diff$diff) 
